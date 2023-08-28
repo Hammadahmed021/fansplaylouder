@@ -99,3 +99,32 @@ export const exerciseListing =[
     iconUrl: ArrowImage,
   },
 ];
+
+export const rosterList =[{
+  id:0,
+  title: ' Avacado',
+  imageUrl:arilogo,
+  dob: '1889-9329',
+  heightAvatar: `6" 4"`,
+  weightAvatar: '210lb',
+  age: '24'
+},
+{
+  id:1,
+  title: ' Avacado',
+  imageUrl:arilogo,
+  dob: '1889-9329',
+  heightAvatar: `6" 4"`,
+  weightAvatar: '210lb',
+  age: '24'
+},
+{
+  id:2,
+  title: ' Avacado',
+  imageUrl:arilogo,
+  dob: '1889-9329',
+  heightAvatar: `6" 4"`,
+  weightAvatar: '210lb',
+  age: '24'
+}
+];

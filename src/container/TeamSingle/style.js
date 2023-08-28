@@ -8,9 +8,8 @@ export const styles = StyleSheet.create({
     paddingTop: 40,
     
   },
-  headerWrap:{
-    backgroundColor: colors.secondary,
-    paddingVertical: 10,
+  headerWrap:{    
+    marginHorizontal: 10,
   },
   innerWrap:{
     paddingHorizontal: 10,
@@ -19,7 +18,8 @@ export const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: colors.black
+    marginTop: 30,
+
   },
   
   

@@ -11,3 +11,7 @@ export {default as ScreenFive} from './TeamScreens/ScreenFive';
 export {default as SignupPlatform} from './SignupPlatform';
 export {default as TeamList} from './TeamList';
 export {default as TeamSingle} from './TeamSingle';
+export {default as TeamInfo} from './TeamMisc/TeamInfo';
+export {default as TeamRoster} from './TeamMisc/TeamRoster';
+export {default as TeamStats} from './TeamMisc/TeamStats';
+

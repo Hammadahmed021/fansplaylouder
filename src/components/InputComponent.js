@@ -6,14 +6,14 @@ import { fontSizes } from '../theme/Font';
 
 
 
-export default function InputComponent({placeholder  , keyboard , value , iconImg , secureTextEntry}) {
+export default function InputComponent({placeholder , style , keyboard , value , iconImg , secureTextEntry}) {
     const [text, onChangeText] = useState('');
 
   return (
     <View style={styles.fieldSet}>
   
     <TextInput
-        style={styles.inputField}
+        style={[styles.inputField , style]}
         onChangeText={onChangeText}
         value={text}
         placeholder={placeholder}
@@ -28,7 +28,7 @@ export default function InputComponent({placeholder  , keyboard , value , iconIm
 
 const styles = StyleSheet.create({
     fieldSet:{
-        margin: 10,
+      
         marginBottom: 15,
         padding: 5,     
         paddingLeft: 40,

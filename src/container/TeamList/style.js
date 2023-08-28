@@ -18,9 +18,7 @@ export const styles = StyleSheet.create({
   },
   list: {
    paddingVertical: 20,
-   paddingHorizontal: 5,
-
-   
+   paddingHorizontal: 5,   
   }
  
  
