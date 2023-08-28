@@ -14,7 +14,7 @@ export default function Login({navigation}) {
     <View style={styles.bgContainer}>
       <SignInHeader headerText={'Log In to your Account'} />
       <ScrollView>
-        <View style={{marginHorizontal: 5}}>
+        <View style={{marginHorizontal: 10 , paddingTop: 10}}>
         
           <InputComponent
             placeholder={'johndoe@example.com'}
@@ -29,7 +29,7 @@ export default function Login({navigation}) {
           />
          
           <View
-            style={{paddingHorizontal: 10, marginTop: 10, marginBottom: 30}}>
+            style={{ marginTop: 10, marginBottom: 30}}>
             <ButtonComponent
               title={'Log In'}
               textWeight={'500'}

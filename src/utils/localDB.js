@@ -4,6 +4,9 @@ const ArrowImage =  require('../assets/images/arrow.png');
 const arilogo = require('../assets/images/teamlogo/ari.png')
 
 
+const productImage = require('../assets/images/products/shirt.png')
+
+
 
 export const tagNames = [
     {
@@ -128,3 +131,14 @@ export const rosterList =[{
   age: '24'
 }
 ];
+
+
+export const Products=[
+  {
+    id:0,
+  productImg: productImage,
+  productNick: 'A.cardinals',
+  productName: 'Shirt',
+  productPrice: '$111',
+  productCta: 'Add'
+}]

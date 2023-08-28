@@ -14,4 +14,7 @@ export {default as TeamSingle} from './TeamSingle';
 export {default as TeamInfo} from './TeamMisc/TeamInfo';
 export {default as TeamRoster} from './TeamMisc/TeamRoster';
 export {default as TeamStats} from './TeamMisc/TeamStats';
+export {default as ShopList} from './Shop/ShopList' 
+export {default as ShopSingle} from './Shop/ShopSingle' 
+export {default as ShopView} from './Shop/ShopView' 
 
