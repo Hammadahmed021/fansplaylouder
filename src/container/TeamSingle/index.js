@@ -8,10 +8,11 @@ import TeamInfo from '../TeamMisc/TeamInfo';
 import TeamRoster from '../TeamMisc/TeamRoster';
 import TeamStats from '../TeamMisc/TeamStats';
 import TeamName from '../../components/TeamName';
+import TextComponent from '../../components/TextComponent';
 
 const teamlogo = require('../../assets/images/teamlogo/ari.png');
 
-export default function TeamSingle() {
+export default function TeamSingle({navigation}) {
   const layout = useWindowDimensions();
   const [index, setIndex] = useState(0);
 
@@ -33,6 +34,7 @@ export default function TeamSingle() {
       <View style={styles.bgContainer}>
         <View style={styles.headerWrap}>
           <TeamName teamLogo={teamlogo} teamTitle={'Arizona Cardinals'} />
+          <TextComponent text={'Shop'} padTop={20} fontsize={fontSizes.large}  onPress={() => {navigation.navigate('ShopView')}}/>
         </View>
         <View style={styles.innerWrap}>
           <TabView

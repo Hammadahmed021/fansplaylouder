@@ -29,7 +29,7 @@ export default function WelcomeScreenOne({navigation}) {
               imageUrl={soccer}
               text={'Soccer'}
               onPress={() => {
-                navigation.navigate('ScreenOne');
+                navigation.navigate('TeamList');
               }}
             />
             <Teams

@@ -23,9 +23,10 @@ export const styles = StyleSheet.create({
   },
   mainImage:{
    width: '100%',
-  //  height: 300,
+   height: 250,
     justifyContent: 'center',
     alignItems: 'center',
+    textAlign: 'center',
     backgroundColor: colors.white,
   
     ...Platform.select({
@@ -46,14 +47,26 @@ export const styles = StyleSheet.create({
   },
   backdropStyle :{
     width: '100%',
-    height: 20,
+    height: 40,
     backfaceVisibility: 'visible',
-    backgroundColor: '#00000009',
+    backgroundColor: '#00000005',
     position: 'absolute',
-    bottom: 0
- 
-  }
-  
+    bottom: -20, 
+ },
+ miscStyle:{
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  flexDirection: 'row',
+  marginBottom: 20,
+ },
+ miniImages:{
+  width: 80,
+  height: 80,
+  borderRadius: 10,
+  borderWidth: 0.5,
+  borderColor: colors.placeholderColor,
+ }
   
  
  

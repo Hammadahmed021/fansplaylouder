@@ -22,7 +22,7 @@ export default function TeamList({navigation}) {
              <TeamName  item={item}  
           teamLogo={item.imageUrl}
           teamTitle={item.name} 
-          onPress={() => setSelectedId(item.id)}
+          onPress={() => navigation.navigate('TeamSingle')}
           
           />
        

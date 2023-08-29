@@ -10,11 +10,11 @@ import { fontSizes } from '../theme/Font'
 
 
 
-export default function ProductCard() {
+export default function ProductCard({onPress}) {
   return (
     <>
     <View style={styles.wrapper}>
-        <TouchableOpacity >
+        <TouchableOpacity onPress={onPress}>
         <View style={styles.imageWrap}>
             <Image source={productImage} resizeMode='contain' />
             <Image source={heartIcon} resizeMode='contain' style={styles.wishlist} />

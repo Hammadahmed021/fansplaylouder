@@ -44,6 +44,7 @@ export default function SignupPlatform({navigation}) {
       <ButtonComponent
           title={'Sign up with email'}
           style={{width: '100%',  marginTop: 40}}
+          onPress={() => { navigation.navigate('Signup')}}
         />
     </View>
   );

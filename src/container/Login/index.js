@@ -34,7 +34,7 @@ export default function Login({navigation}) {
               title={'Log In'}
               textWeight={'500'}
               onPress={() => {
-                navigation.navigate('MyTabs');
+                navigation.navigate('WelcomeScreenOne');
               }}
               
             />

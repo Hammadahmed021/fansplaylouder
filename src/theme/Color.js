@@ -3,7 +3,8 @@ export const colors = {
     secondary: '#D8021A',
     white: 'white',
     black: '#1E1E20',
-      
-    placeholderColor: 'rgba(4, 25, 46, 0.5)'
+    bgLightColor: '#F5F6FA',      
+    placeholderColor: 'rgba(4, 25, 46, 0.5)',
+    textColor: '#04192E50',
 
 }

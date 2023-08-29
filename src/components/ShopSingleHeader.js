@@ -3,11 +3,11 @@ import React from 'react'
 import { colors } from '../theme/Color';
 
 
-export default function ShopSingleHeader({filterIcon , cartIcon }) {
+export default function ShopSingleHeader({filterIcon , cartIcon , onPress}) {
   return (
     <View style={styles.container}>
       
-        <TouchableOpacity style={styles.imgStyle}>
+        <TouchableOpacity style={styles.imgStyle} onPress={onPress}>
             <Image source={filterIcon} resizeMode='contain' />
         </TouchableOpacity>
         <View style={{display: 'flex' , flexDirection: 'row', justifyContent: 'space-around' , alignItems: 'center'}}>

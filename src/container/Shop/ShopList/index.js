@@ -5,9 +5,11 @@ import TextComponent from '../../../components/TextComponent'
 import { colors } from '../../../theme/Color'
 import { fontSizes , fontFamily } from '../../../theme/Font'
 import ProductCard from '../../../components/ProductCard'
+import { useNavigation } from '@react-navigation/native';
 
 
 export default function ShopList() {
+  const navigation = useNavigation();
   return (
     <ScrollView>
   <View style={styles.bgContainer}>
@@ -16,7 +18,7 @@ export default function ShopList() {
             <TextComponent textColor={colors.placeholderColor} text={'View All'} fontsize={fontSizes.regular} fontfamily={fontFamily.regular}/>
         </View>
         <View style={styles.container}>
-        <ProductCard />
+        <ProductCard onPress={() => {navigation.navigate('ShopSingle')}}/>
         <ProductCard />
         <ProductCard />
         <ProductCard />

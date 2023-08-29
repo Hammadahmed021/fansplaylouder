@@ -5,11 +5,11 @@ import { fontFamily, fontSizes } from '../theme/Font';
 import TextComponent from './TextComponent';
 import { colors } from '../theme/Color';
 
-export default function TeamName({teamTitle , teamLogo }) {
+export default function TeamName({teamTitle , teamLogo, onPress }) {
   return (
    <>
    <View style={styles.container}>
-   <TextComponent text={teamTitle} fontweight={'600'} fontsize={fontSizes.large} style={{color: colors.secondary}} />
+   <TextComponent text={teamTitle} fontweight={'600'} fontsize={fontSizes.large} style={{color: colors.secondary}} onPress={onPress}/>
    <Image resizeMode='contain' source={teamLogo} width={55} height={55}/>
    </View>
    </>
