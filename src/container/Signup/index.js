@@ -15,7 +15,7 @@ export default function Signup({navigation}) {
     <>
       <ScrollView>
         <View style={styles.bgContainer}>
-          <SignInHeader headerText={'Sign Up to your Account'} />
+          <SignInHeader navigation={navigation} headerText={'Sign Up to your Account'} />
 
           <View style={{marginHorizontal: 10}}>
             <InputComponent

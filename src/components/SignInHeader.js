@@ -7,11 +7,11 @@ import TextComponent from './TextComponent';
 
 const bgImg = require('../assets/images/signupbg.png');
 
-export default function SignInHeader({headerText}) {
+export default function SignInHeader(props) {
   return (
     <View style={styles.container}>
-       <TextComponent onPress={() => navigation.navigate('WelcomeScreenOne') } text={'back'} style={styles.textStyles}/>
-      <Text style={styles.headerText}>{headerText}</Text>
+       <TextComponent onPress={() => props.navigation ? props.navigation.goBack() : props.navigation.navigate('WelcomeScreenOne') } text={'back'} style={styles.textStyles}/>
+      <Text style={styles.headerText}>{props.headerText}</Text>
     </View>
   )
 }

@@ -1,4 +1,4 @@
-import {View, useWindowDimensions, Text} from 'react-native';
+import {View, useWindowDimensions, Text, Dimensions} from 'react-native';
 import React, {useState} from 'react';
 import {styles} from './style';
 import {fontFamily, fontSizes} from '../../theme/Font';
@@ -48,7 +48,7 @@ export default function TeamSingle({navigation}) {
                 {...props}
                 
                 pressColor={colors.white}
-                 indicatorStyle={{backgroundColor: colors.secondary, width: 115 , marginHorizontal: 5 , minHeight: 60 , borderRadius: 10 , marginBottom: 11}}
+                 indicatorStyle={{backgroundColor: colors.secondary, width: '33%' , minHeight: 60 , borderRadius: 10 , marginBottom: 11}}
                 style={{
                   backgroundColor: colors.white,
                   ...Platform.select({
@@ -72,7 +72,7 @@ export default function TeamSingle({navigation}) {
                   <Text
                     style={{
                      
-                     color:  colors.primary,
+                     color: focused ? colors.white : colors.primary,
                       padding: 20,
                       fontSize: fontSizes.default,
                       fontWeight: '700',
@@ -81,7 +81,7 @@ export default function TeamSingle({navigation}) {
                       borderColor: colors.placeholderColor,
                       borderRadius: 10,
                       marginHorizontal: 5,
-                      width: 115,
+                      width: Dimensions.get("window").width / 3 - 10,
                       minHeight: 60,
                       alignItems: 'center',
                       textAlign: 'center',

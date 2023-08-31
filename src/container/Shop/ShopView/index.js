@@ -1,4 +1,4 @@
-import { View, Text , FlatList , SafeAreaView , ScrollView , useWindowDimensions} from 'react-native'
+import { View, Text , FlatList , SafeAreaView , ScrollView , useWindowDimensions, Dimensions} from 'react-native'
 import React, {useState} from 'react'
 import {styles} from './style';
 import TextComponent from '../../../components/TextComponent'; 
@@ -47,7 +47,7 @@ export default function ShopView() {
               {...props}
               
               pressColor={colors.white}
-               indicatorStyle={{ backgroundColor: colors.placeholderColor, width: 110 , marginHorizontal: 7, minHeight: 40 , borderRadius: 10 , marginBottom: 11}}
+               indicatorStyle={{ backgroundColor: colors.placeholderColor, width: '33%' , minHeight: 40 , borderRadius: 10 , marginBottom: 11}}
               style={{
                 backgroundColor: colors.white,
                 ...Platform.select({
@@ -71,7 +71,7 @@ export default function ShopView() {
                 <Text
                   style={{
                    
-                   color:  colors.primary,
+                   color: focused ? colors.white : colors.primary,
                     padding: 10,
                     fontSize: fontSizes.default,
                     fontWeight: '700',
@@ -80,7 +80,8 @@ export default function ShopView() {
                     borderColor: colors.placeholderColor,
                     borderRadius: 10,
                     marginHorizontal: 5,
-                    width: 110,
+                    // width: 110,
+                    width: Dimensions.get("window").width / 3 - 10,
                     minHeight: 40,
                     alignItems: 'center',
                     textAlign: 'center',

@@ -12,7 +12,7 @@ import { lockIcon , smsIcon } from '../../assets/icons';
 export default function Login({navigation}) {
   return (
     <View style={styles.bgContainer}>
-      <SignInHeader headerText={'Log In to your Account'} />
+      <SignInHeader navigation={navigation} headerText={'Log In to your Account'} />
       <ScrollView>
         <View style={{marginHorizontal: 10 , paddingTop: 10}}>
         
